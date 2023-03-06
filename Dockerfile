@@ -4,7 +4,7 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND noninteractive
 
 # instalando paquetes
-RUN apt-get update && apt-get -y upgrade && apt-get install -y build-essential && apt-get install -y ruby ruby-dev curl
+RUN apt-get update && apt-get -y upgrade && apt-get install -y build-essential && apt-get install -y ruby ruby-dev curl git
 
 # instalando terraform
 RUN curl -s https://releases.hashicorp.com/terraform/1.3.9/terraform_1.3.9_linux_amd64.zip -o /tmp/terraform_1.3.9_linux_amd64.zip && \

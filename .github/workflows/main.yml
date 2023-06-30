@@ -23,7 +23,7 @@ jobs:
     - name: Reusing Workflows
       uses: actions/checkout@v3
       with:
-        repository: punkerside/titan-script-core
+        repository: punkerside/titan-core
         ref: main
         path: .script/
 

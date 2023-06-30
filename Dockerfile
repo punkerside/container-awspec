@@ -13,6 +13,7 @@ RUN apt-get -y update && apt-get -y install --no-install-recommends apt-utils=2.
   gcc=4:11.2.0-1ubuntu1 \
   make=4.3-4.1build1 \
   libffi-dev=3.4.2-4 \
+  g++=4:11.2.0-1ubuntu1 \
   gettext=0.21-4ubuntu4 && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*

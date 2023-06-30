@@ -3,10 +3,6 @@ FROM ubuntu:22.04
 # configurando entorno
 ENV DEBIAN_FRONTEND noninteractive
 
-# RUN apt-get update && apt-get install -y --no-install-recommends gcc=4:11.2.0-1ubuntu1
-# RUN apt-get update && apt-get install -y --no-install-recommends make=4.3-4.1build1
-RUN apt-get update && apt-get install -y --no-install-recommends libffi-dev=3.4.2-4
-
 # instalando paquetes
 RUN apt-get -y update && apt-get -y install --no-install-recommends apt-utils=2.4.9 && apt-get -y upgrade && apt-get -y install --no-install-recommends \
   ruby=1:3.0~exp1 \
